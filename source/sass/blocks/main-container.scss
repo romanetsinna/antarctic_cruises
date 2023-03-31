@@ -1,0 +1,16 @@
+.main-container__about {
+  padding: 115px 0 145px 0;
+
+  @media (max-width: 1023.9px) {
+    padding: 100px 5px 95px 5px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding: 67px 0 87px 0;
+  }
+}
+
+.main-container__cruises {
+  padding-top: 62px;
+  padding-bottom: 120px;
+}

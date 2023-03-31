@@ -1,0 +1,49 @@
+.description__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 65.83px;
+  color: $color-light;
+  margin-bottom: 13px;
+
+  @media (max-width: 1023.9px) {
+    font-size: 50px;
+    line-height: 60.95px;
+  }
+
+  @media (max-width: 767.9px) {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 9px;
+  }
+}
+
+.description__text {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: $color-light;
+
+  @media (max-width: 1023.9px) {
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+
+  @media (max-width: 767.9px) {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+}
+
+.description__text br {
+  display: none;
+
+  @media (max-width: 767.9px) {
+    display: inline;
+  }
+}

@@ -1,0 +1,141 @@
+.main-nav {
+  width: 100%;
+  max-width: 595px;
+
+  @media (max-width: 1023.9px) {
+    max-width: 503px;
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  column-gap: 34px;
+  row-gap: 10px;
+
+  @media (max-width: 1023.9px) {
+    column-gap: 23px;
+  }
+
+  @media (max-width: 767.9px) {
+    display: none;
+  }
+}
+
+.main-nav__link span {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: $color-light;
+
+  @media (max-width: 1023.9px) {
+    font-size: 14px;
+    line-height: 17.07px;
+  }
+}
+
+//Бургерное меню
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: 767.9px) {
+    // display: block;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // z-index: 2;
+    // width: 24px;
+    // height: 12px;
+    // cursor: pointer;
+    // border: none;
+    // padding: 32px 20px 22px 32px;
+  }
+}
+
+// .main-nav--closed .main-nav__toggle::before {
+//   position: absolute;
+//   content: "";
+//   top: 19px;
+//   right: 17px;
+//   width: 16px;
+//   height: 1px;
+//   background-color: @basic_black;
+//   box-shadow: 0 5px 0 0 @basic_black, 0 10px 0 0 @basic_black;
+// }
+
+// .main-nav--closed .main-nav__toggle {
+//   background-color: @basic_white;
+// }
+
+// .main-nav--opened .main-nav__toggle {
+//   top: 0;
+//   right: -20px;
+//   padding: 32px 26px 22px 32px;
+//   background-color: @basic_secondary;
+
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 25px;
+//     right: 22px;
+//     width: 16px;
+//     height: 1.5px;
+//     background-color: @basic_black;
+//   }
+
+//   &::before {
+//     transform: rotate(45deg);
+//     box-shadow: none;
+//   }
+
+//   &::after {
+//     transform: rotate(-45deg);
+//   }
+// }
+
+// .main-nav--closed .main-nav__list {
+//   @media (max-width: 767px) {
+//     display: none;
+//   }
+// }
+
+// .main-nav--opened .main-nav__list {
+//   @media (max-width: 767px) {
+//     display: block;
+//   }
+// }
+
+// // Стандартное меню c js
+// .main-nav--with-js .main-nav__list {
+//   @media (max-width: 767px) {
+//     position: absolute;
+//     right: -20px;
+//     top: 100%;
+//     width: @mobile_width;
+//     background-color: @basic_white;
+//     z-index: 2;
+//     text-align: center;
+//   }
+// }
+
+// // Стандартное меню без js
+// @media (max-width: 767px) {
+//   .main-nav--nojs .main-nav__toggle {
+//     display: none;
+//   }
+
+//   .main-nav--nojs .main-nav__wrapper {
+//     position: static;
+//     min-height: 0;
+//   }
+
+//   .main-nav--nojs .main-nav__item {
+//     display: block;
+//     text-align: center;
+//   }
+// }

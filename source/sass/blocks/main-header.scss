@@ -1,3 +1,59 @@
 .main-header {
-  background-color: rgb(5, 82, 82);
+  width: 100%;
+  min-height: 655px;
+  background-image: url("../img/bg-image.webp");
+  background-position: center;
+  background-size: cover;
+  background-color: $color-bg;
+
+  @media (min-width: 1023.9px) and (min-resolution: 2dppx) {
+    background-image: url("../img/bg-image@2x.webp");
+  }
+
+  @media (max-width: 1023.9px) {
+    min-height: 638px;
+    background-image: url("../img/bg-image-tablet.webp");
+  }
+
+  @media (min-width: 767.9px) and (max-width: 1023.9px) and (min-resolution: 2dppx) {
+    background-image: url("../img/bg-image-tablet@2x.webp");
+  }
+
+  @media (max-width: 767.9px) {
+    min-height: 500px;
+    background-image: url("../img/bg-image-mobile.webp");
+    background-position: 50% 70%;
+  }
+
+  @media (max-width: 767.9px) and (min-resolution: 2dppx) {
+    background-image: url("../img/bg-image-mobile@2x.webp");
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0;
+
+  @media (max-width: 1023.9px) {
+    padding: 27px 4px 27px 5px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding: 20px 0;
+  }
+}
+
+.main-header__description {
+  padding: 162px 95px 120px 95px;
+
+  @media (max-width: 1023.9px) {
+    padding: 190px 5px 120px 5px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding: 114px 25px 0 0;
+    margin-left: -5px;
+  }
 }

@@ -1,5 +1,9 @@
 // Colors
-// ---------------------------------
+$color-light:                       #F9FBFD;
+$color-dark:                        #011C40;
+$color-card-text:                   #D8D8D9;
+$color-placeholder:                 rgba(1, 28, 64, 0.7);
+$color-bg:                          #285fb9;
 
 // Default
 
@@ -25,9 +29,7 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-rouble:                         "Rouble", "Arial", sans-serif;
-
-$ff-placeholder:                    "Montserrat", "Arial", sans-serif;
+$ff-montserrat:                    "Montserrat", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

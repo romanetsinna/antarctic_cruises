@@ -27,42 +27,52 @@
         <header class="main-header">
           <div class="main-header__container container">
 
-            <!-- Logo -->
-            <div class="main-header__logo logo">
-              <a class="logo__image" href="index.html">
-                <picture>
-                  <source type="image/webp" media="(max-width: 767.9px)" srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1023.9px)" srcset="img/logo-tablet.webp 1x, img/logo-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
-                  <source media="(max-width: 767.9px)" srcset="img/logo-mobile.png 1x, img/logo-mobile@2x.png 2x">
-                  <source media="(max-width: 1023.9px)" srcset="img/logo-tablet.png 1x, img/logo-tablet@2x.png 2x">
-                  <img src="img/logo.png" width="70" height="38" alt="Логотип Круизы в Антарктику." srcset="img/logo@2x.png 2x">
-                </picture>
-              </a>
-            </div>
+            <div class="main-header__wrapper">
+              <!-- Logo -->
+              <div class="main-header__logo logo">
+                <a class="logo__image" href="index.html">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767.9px)" srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1023.9px)" srcset="img/logo-tablet.webp 1x, img/logo-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+                    <source media="(max-width: 767.9px)" srcset="img/logo-mobile.png 1x, img/logo-mobile@2x.png 2x">
+                    <source media="(max-width: 1023.9px)" srcset="img/logo-tablet.png 1x, img/logo-tablet@2x.png 2x">
+                    <img src="img/logo.png" width="70" height="38" alt="Логотип Круизы в Антарктику." srcset="img/logo@2x.png 2x">
+                  </picture>
+                </a>
+              </div>
 
-            <!-- Menu -->
-            <nav class="main-header_navigation navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item">
-                  <a href="#"><span>Преимущества</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Направления</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Ближайшие круизы</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Контакты</span></a>
-                </li>
-              </ul>
-            </nav>
+              <!-- Menu -->
+              <nav class="main-header_navigation main-nav">
+                <div class="main-nav--nojs">
+                  <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                      <a class="main-nav__link" href="#"><span>Преимущества</span></a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a class="main-nav__link" href="#"><span>Направления</span></a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a class="main-nav__link" href="#"><span>Ближайшие круизы</span></a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a class="main-nav__link" href="#"><span>Контакты</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+              <!-- Кнопка для открытия мобильного меню -->
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню.</span>
+              </button>
+
+            </div>
 
             <!-- Description -->
             <div class="main-header__description description">
-              <h1 class="description__title">Круизы в Антарктику</h1>
-              <p class="description__text">Волшебный мир айсбергов и пингвинов</p>
+              <h1 class="description__title">Круизы в&nbsp;Антарктику</h1>
+              <p class="description__text">Волшебный мир<br> айсбергов и&nbsp;пингвинов</p>
             </div>
 
           </div>
@@ -74,42 +84,55 @@
             <!-- About -->
             <section class="main-container__about about">
               <div class="about__description">
-                <h2 class="about__title">Путешествие на край Земли</h2>
-                <p class="about__text">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли,
-                  где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.
+                <h2 class="about__title">Путешествие<br> на&nbsp;край Земли</h2>
+                <p class="about__text">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики.
+                  Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов,
+                  китов,<br> морских котиков и&nbsp;многое другое.
                 </p>
               </div>
-              <div class="about__image"></div>
+              <div class="about__image">
+                <picture>
+                  <!-- <source type="image/webp" media="(max-width: 767.9px)" srcset="img/logo-mobile.webp 1x, img/logo-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023.9px)" srcset="img/logo-tablet.webp 1x, img/logo-tablet@2x.webp 2x"> -->
+                  <source type="image/webp" srcset="img/about.webp 1x, img/about@2x.webp 2x">
+                  <!-- <source media="(max-width: 767.9px)" srcset="img/logo-mobile.png 1x, img/logo-mobile@2x.png 2x">
+                  <source media="(max-width: 1023.9px)" srcset="img/logo-tablet.png 1x, img/logo-tablet@2x.png 2x"> -->
+                  <img src="img/about.jpg" width="560" height="301" alt="Пингвины." srcset="img/about@2x.jpg 2x">
+                </picture>
+              </div>
             </section>
+          </div>
 
             <!-- Benefits -->
             <section class="main-container__benefits benefits">
-              <h2 class="benefits__title"></h2>
-              <ul class="benefits__list">
-                <li class="benefits__item">
-                  <!-- <svg width="35" height="35" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#icon_watch"></use>
-                  </svg> -->
-                  <h3 class="benefits__item-title">Небольшой круизный лайнер</h3>
-                  <p class="benefits__item-description">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность
-                    насладиться видами и природой.
-                  </p>
-                </li>
-                <li class="benefits__item">
-                  <!-- <svg width="35" height="35" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#icon_watch"></use>
-                  </svg> -->
-                  <h3 class="benefits__item-title">Система все включено</h3>
-                  <p class="benefits__item-description">Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
-                </li>
-                <li class="benefits__item">
-                  <!-- <svg width="35" height="35" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#icon_watch"></use>
-                  </svg> -->
-                  <h3 class="benefits__item-title">Экскурсионные туры на Zodiac</h3>
-                  <p class="benefits__item-description">Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac c опытными экскурсоводами.</p>
-                </li>
-              </ul>
+              <div class="benefits__container container">
+                <h2 class="benefits__title">Преимущества</h2>
+                <ul class="benefits__list">
+                  <li class="benefits__item benefits__item--benefit-ship">
+                    <svg width="27" height="32" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#benefit-ship"></use>
+                    </svg>
+                    <h3 class="benefits__item-title">Небольшой<br> круизный лайнер</h3>
+                    <p class="benefits__item-description">Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст
+                      возможность насладиться видами и&nbsp;природой.
+                    </p>
+                  </li>
+                  <li class="benefits__item benefits__item--benefit-ai">
+                    <svg width="38" height="32" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#benefit-ai"></use>
+                    </svg>
+                    <h3 class="benefits__item-title">Система<br> все включено</h3>
+                    <p class="benefits__item-description">Все наши круизы работают по&nbsp;системе "Все Включено". Великолепные блюда и&nbsp;безлимитный бар доступны<br> для вас 24&nbsp;часа.</p>
+                  </li>
+                  <li class="benefits__item benefits__item--benefit-zodiac">
+                    <svg width="44" height="32" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="img/sprite.svg#benefit-zodiac"></use>
+                    </svg>
+                    <h3 class="benefits__item-title">Экскурсионные<br> туры на&nbsp;Zodiac</h3>
+                    <p class="benefits__item-description">Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac c&nbsp;опытными экскурсоводами.</p>
+                  </li>
+                </ul>
+              </div>
             </section>
 
             <!-- Cruises -->
@@ -138,7 +161,6 @@
               </div>
             </section>
 
-          </div>
         </main>
 
       </div>
