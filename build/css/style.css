@@ -685,7 +685,7 @@ button,
   background-image: url("../img/bg-benefits.webp");
   background-position: center;
   background-size: cover;
-  background-color: #285fb9;
+  background-color: #a4c4da;
 }
 
 .benefits__container {
@@ -786,6 +786,11 @@ button,
   opacity: 0.8;
 }
 
+.cruises__container {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
 .cruises__title {
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
@@ -793,7 +798,7 @@ button,
   line-height: 42px;
   color: #011C40;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .cruises__list {
@@ -804,11 +809,64 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-column-gap: 2.7%;
+  -moz-column-gap: 2.7%;
+  column-gap: 2.7%;
+  row-gap: 30px;
 }
 
 .cruises__item {
   background-color: antiquewhite;
-  padding: 30px 30px 45px 30px;
+  padding: 30px 30px 23px 30px;
+  width: 100%;
+  min-height: 386px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #a4c4da;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #F9FBFD;
+}
+
+.cruises__item--astoria {
+  background-image: url("../img/cruises/cruise_astoria.webp");
+}
+
+.cruises__item--elain {
+  background-image: url("../img/cruises/cruise_elain.webp");
+}
+
+.cruises__item--atlantis {
+  background-image: url("../img/cruises/cruise_atlantis.webp");
+}
+
+.cruises__item--odissey {
+  background-image: url("../img/cruises/cruise_odissey.webp");
+}
+
+.cruises__item--olimpia {
+  background-image: url("../img/cruises/cruise_olimpia.webp");
+}
+
+.cruises__item--aurora {
+  background-image: url("../img/cruises/cruise_aurora.webp");
+}
+
+.cruises__item--leonor {
+  background-image: url("../img/cruises/cruise_leonor.webp");
+}
+
+.cruises__item--minion {
+  background-image: url("../img/cruises/cruise_minion.webp");
 }
 
 .custom-input,
@@ -1351,6 +1409,25 @@ button,
   display: none;
 }
 
+.feedback {
+  width: 100%;
+  min-height: 555px;
+  background-image: url("../img/bg-form.webp");
+  background-position: center;
+  background-size: cover;
+  background-color: #285fb9;
+}
+
+.feedback__description h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__description p {
+  margin: 0;
+  padding: 0;
+}
+
 .logo {
   width: 100%;
   max-width: 70px;
@@ -1587,6 +1664,38 @@ button,
     background-image: url("../img/bg-benefits@2x.webp");
   }
 
+  .cruises__item--astoria {
+    background-image: url("../img/cruises/cruise_astoria@2x.webp");
+  }
+
+  .cruises__item--elain {
+    background-image: url("../img/cruises/cruise_elain@2x.webp");
+  }
+
+  .cruises__item--atlantis {
+    background-image: url("../img/cruises/cruise_atlantis@2x.webp");
+  }
+
+  .cruises__item--odissey {
+    background-image: url("../img/cruises/cruise_odissey@2x.webp");
+  }
+
+  .cruises__item--olimpia {
+    background-image: url("../img/cruises/cruise_olimpia@2x.webp");
+  }
+
+  .cruises__item--aurora {
+    background-image: url("../img/cruises/cruise_aurora@2x.webp");
+  }
+
+  .cruises__item--leonor {
+    background-image: url("../img/cruises/cruise_leonor@2x.webp");
+  }
+
+  .cruises__item--minion {
+    background-image: url("../img/cruises/cruise_minion@2x.webp");
+  }
+
   .main-header {
     background-image: url("../img/bg-image@2x.webp");
   }
@@ -1670,6 +1779,60 @@ button,
     line-height: 25.2px;
   }
 
+  .cruises__container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .cruises__title {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .cruises__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 4.7%;
+    -moz-column-gap: 4.7%;
+    column-gap: 4.7%;
+  }
+
+  .cruises__item {
+    padding: 30px 30px 28px 35px;
+  }
+
+  .cruises__item--astoria {
+    background-image: url("../img/cruises/cruise_astoria-tablet.webp");
+  }
+
+  .cruises__item--elain {
+    background-image: url("../img/cruises/cruise_elain-tablet.webp");
+  }
+
+  .cruises__item--atlantis {
+    background-image: url("../img/cruises/cruise_atlantis-tablet.webp");
+  }
+
+  .cruises__item--odissey {
+    background-image: url("../img/cruises/cruise_odissey-tablet.webp");
+  }
+
+  .cruises__item--olimpia {
+    background-image: url("../img/cruises/cruise_olimpia-tablet.webp");
+  }
+
+  .cruises__item--aurora {
+    background-image: url("../img/cruises/cruise_aurora-tablet.webp");
+  }
+
+  .cruises__item--leonor {
+    background-image: url("../img/cruises/cruise_leonor-tablet.webp");
+  }
+
+  .cruises__item--minion {
+    background-image: url("../img/cruises/cruise_minion-tablet.webp");
+  }
+
   .description__title {
     font-size: 50px;
     line-height: 60.95px;
@@ -1687,6 +1850,10 @@ button,
 
   .main-container__about {
     padding: 100px 5px 95px 5px;
+  }
+
+  .main-container__cruises {
+    padding-top: 67px;
   }
 
   .main-header {
@@ -1781,6 +1948,26 @@ button,
     padding: 25px 15px 20px 20px;
   }
 
+  .cruises__container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .cruises__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 31px;
+  }
+
+  .cruises__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .cruises__item {
+    padding: 30px 30px 17px 25px;
+  }
+
   .description__title {
     font-size: 36px;
     line-height: 45px;
@@ -1807,6 +1994,10 @@ button,
 
   .main-container__about {
     padding: 67px 0 87px 0;
+  }
+
+  .main-container__cruises {
+    padding-top: 35px;
   }
 
   .main-header {
@@ -1934,6 +2125,38 @@ button,
 @media (min-width: 767.9px) and (max-width: 1023.9px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 767.9px) and (max-width: 1023.9px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 767.9px) and (max-width: 1023.9px) and (min-resolution: 2dppx) {
   .benefits {
     background-image: url("../img/bg-benefits-tablet@2x.webp");
+  }
+
+  .cruises__item--astoria {
+    background-image: url("../img/cruises/cruise_astoria-tablet@2x.webp");
+  }
+
+  .cruises__item--elain {
+    background-image: url("../img/cruises/cruise_elain-tablet@2x.webp");
+  }
+
+  .cruises__item--atlantis {
+    background-image: url("../img/cruises/cruise_atlantis-tablet@2x.webp");
+  }
+
+  .cruises__item--odissey {
+    background-image: url("../img/cruises/cruise_odissey-tablet@2x.webp");
+  }
+
+  .cruises__item--olimpia {
+    background-image: url("../img/cruises/cruise_olimpia-tablet@2x.webp");
+  }
+
+  .cruises__item--aurora {
+    background-image: url("../img/cruises/cruise_aurora-tablet@2x.webp");
+  }
+
+  .cruises__item--leonor {
+    background-image: url("../img/cruises/cruise_leonor-tablet@2x.webp");
+  }
+
+  .cruises__item--minion {
+    background-image: url("../img/cruises/cruise_minion-tablet@2x.webp");
   }
 
   .main-header {

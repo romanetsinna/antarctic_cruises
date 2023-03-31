@@ -13,4 +13,12 @@
 .main-container__cruises {
   padding-top: 62px;
   padding-bottom: 120px;
+
+  @media (max-width: 1023.9px) {
+    padding-top: 67px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding-top: 35px;
+  }
 }

@@ -1,0 +1,18 @@
+.feedback {
+  width: 100%;
+  min-height: 555px;
+  background-image: url("../img/bg-form.webp");
+  background-position: center;
+  background-size: cover;
+  background-color: $color-bg;
+}
+
+.feedback__description h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__description p {
+  margin: 0;
+  padding: 0;
+}
