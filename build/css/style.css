@@ -869,72 +869,6 @@ button,
   background-image: url("../img/cruises/cruise_minion.webp");
 }
 
-.custom-input,
-.custom-textarea {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
-}
-
-.custom-input label,
-.custom-textarea label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-}
-
-.custom-input label input,
-.custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 300px;
-  min-height: 48px;
-  margin-left: auto;
-  padding: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  outline: none;
-  -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease;
-}
-
-.custom-input label input:hover,
-.custom-input label textarea:hover,
-.custom-textarea label input:hover,
-.custom-textarea label textarea:hover {
-  border: 2px solid rgba(0, 0, 0, 0.5);
-}
-
-.custom-input label input:focus,
-.custom-input label textarea:focus,
-.custom-textarea label input:focus,
-.custom-textarea label textarea:focus {
-  border: 2px solid rgba(0, 0, 0, 0.8);
-}
-
-.custom-input__error,
-.custom-textarea__error {
-  position: absolute;
-  right: 0;
-  bottom: 35px;
-  color: #ff1553;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-}
-
 .custom-input.is-invalid input,
 .custom-input.is-invalid textarea,
 .custom-textarea.is-invalid input,
@@ -965,13 +899,6 @@ button,
   border: 2px solid rgba(34, 178, 89, 0.5);
 }
 
-.custom-input .input-message,
-.custom-textarea .input-message {
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-}
-
 .custom-input .input-message.is-invalid,
 .custom-textarea .input-message.is-invalid {
   color: #ff0000;
@@ -982,123 +909,12 @@ button,
   color: #15ab07;
 }
 
-.custom-toggle {
-  position: relative;
-  font-size: 18px;
-  line-height: 27px;
-  font-weight: 300;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 500px;
-  padding: 14px 0 10px 36px;
-}
-
-.custom-toggle:last-of-type {
-  padding: 14px 0 58px 36px;
-}
-
-.custom-toggle input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  clip: rect(0 0 0 0);
-}
-
-.custom-toggle label {
-  position: relative;
-  padding-left: 52px;
-  cursor: pointer;
-}
-
-.custom-toggle label span {
-  margin-bottom: 0;
-  margin-left: 0;
-}
-
-.custom-toggle--checkbox .custom-toggle__icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 28px;
-  height: 28px;
-  border: 1.5px solid #2c39f2;
-  -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease;
-}
-
-.custom-toggle--checkbox .custom-toggle__icon::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(44, 57, 242, 0);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
-}
-
-.custom-toggle--radio .custom-toggle__icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 28px;
-  height: 28px;
-  border: 1px solid #2c39f2;
-  border-radius: 50%;
-  -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease;
-}
-
-.custom-toggle--radio .custom-toggle__icon::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  color: rgba(255, 255, 255, 0);
-  border-radius: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
-.custom-toggle input:checked + .custom-toggle__icon {
-  border: 1.5px solid #2c39f2;
-}
-
-.custom-toggle input:checked + .custom-toggle__icon::before {
-  background-color: #2c39f2;
-}
-
 .custom-toggle.is-invalid label span {
   color: #ff1553;
 }
 
-.custom-toggle .input-message {
-  position: absolute;
-  right: 0;
-  bottom: -5px;
-}
-
 .custom-toggle .input-message.is-invalid {
   color: #ff0000;
-}
-
-.custom-toggle .input-message.is-valid {
-  color: #15ab07;
 }
 
 .custom-select {
@@ -1416,16 +1232,179 @@ button,
   background-position: center;
   background-size: cover;
   background-color: #285fb9;
+  padding: 50px 20px 0 121px;
+}
+
+.feedback__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 10.8%;
+  -moz-column-gap: 10.8%;
+  column-gap: 10.8%;
+}
+
+.feedback__description {
+  margin-top: 162px;
 }
 
 .feedback__description h2 {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #011C40;
+  margin-bottom: 7px;
 }
 
 .feedback__description p {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011C40;
+}
+
+.feedback__description-mobile {
+  display: none;
+}
+
+.feedback__form {
+  background-color: #011C40;
+  padding: 43px 50px;
+  width: 100%;
+  max-width: 403px;
+  margin-left: 4px;
+}
+
+.feedback__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #F9FBFD;
+  margin-bottom: 26px;
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 19px;
+}
+
+.form__name input,
+.form__phone input,
+.form__email input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #F9FBFD;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  outline: none;
+  padding: 12px 16px;
+}
+
+.form__name input:hover,
+.form__name input:focus,
+.form__phone input:hover,
+.form__phone input:focus,
+.form__email input:hover,
+.form__email input:focus {
+  outline: none;
+  -webkit-box-shadow: 2px -2px 5px #F9FBFD;
+  box-shadow: 2px -2px 5px #F9FBFD;
+}
+
+.form__name input:active,
+.form__name input:focus-within,
+.form__phone input:active,
+.form__phone input:focus-within,
+.form__email input:active,
+.form__email input:focus-within {
+  outline: none;
+  background-color: #a4c4da;
+}
+
+.form__name input::-webkit-input-placeholder,
+.form__phone input::-webkit-input-placeholder,
+.form__email input::-webkit-input-placeholder {
+  color: #011C40;
+}
+
+.form__name input::-moz-placeholder,
+.form__phone input::-moz-placeholder,
+.form__email input::-moz-placeholder {
+  color: #011C40;
+}
+
+.form__name input:-ms-input-placeholder,
+.form__phone input:-ms-input-placeholder,
+.form__email input:-ms-input-placeholder {
+  color: #011C40;
+}
+
+.form__name input::-ms-input-placeholder,
+.form__phone input::-ms-input-placeholder,
+.form__email input::-ms-input-placeholder {
+  color: #011C40;
+}
+
+.form__name input::placeholder,
+.form__phone input::placeholder,
+.form__email input::placeholder {
+  color: #011C40;
+}
+
+.form__checkbox-label {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #F9FBFD;
+}
+
+.form__button {
+  width: 100%;
+  max-width: 303px;
+  padding: 15px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011C40;
+  background-color: #F9FBFD;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: #a4c4da;
 }
 
 .logo {
@@ -1696,6 +1675,10 @@ button,
     background-image: url("../img/cruises/cruise_minion@2x.webp");
   }
 
+  .feedback {
+    background-image: url("../img/bg-form@2x.webp");
+  }
+
   .main-header {
     background-image: url("../img/bg-image@2x.webp");
   }
@@ -1704,6 +1687,18 @@ button,
 @media (max-width: 1145px) {
   .about__text br {
     display: none;
+  }
+}
+
+@media (max-width: 1130px) {
+  .feedback {
+    padding: 50px 20px 0 90px;
+  }
+
+  .feedback__container {
+    -webkit-column-gap: 2%;
+    -moz-column-gap: 2%;
+    column-gap: 2%;
   }
 }
 
@@ -1843,6 +1838,37 @@ button,
     line-height: 21.94px;
   }
 
+  .feedback {
+    background-image: url("../img/bg-form-tablet.webp");
+    padding: initial;
+    padding-bottom: 102px;
+  }
+
+  .feedback__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 53px;
+  }
+
+  .feedback__description {
+    margin-top: 87px;
+  }
+
+  .feedback__description h2 {
+    font-size: 34px;
+    line-height: 51px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .feedback__description p {
+    text-align: center;
+  }
+
+  .feedback__form {
+    margin: 0 auto;
+  }
+
   .logo__image img {
     width: 38px;
     height: 20px;
@@ -1854,6 +1880,7 @@ button,
 
   .main-container__cruises {
     padding-top: 67px;
+    padding-bottom: 100px;
   }
 
   .main-header {
@@ -1983,6 +2010,48 @@ button,
     display: inline;
   }
 
+  .feedback {
+    background-image: url("../img/bg-form-mobile.webp");
+    padding-bottom: 65px;
+  }
+
+  .feedback__container {
+    padding: 0 15px;
+    row-gap: 34px;
+  }
+
+  .feedback__description {
+    margin-top: 59px;
+  }
+
+  .feedback__description h2 {
+    font-size: 24px;
+    line-height: 31.2px;
+    margin-bottom: 13px;
+  }
+
+  .feedback__description p {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+
+  .feedback__description-desktop {
+    display: none;
+  }
+
+  .feedback__description-mobile {
+    display: block;
+  }
+
+  .feedback__form {
+    padding: 34px 30px 14px 30px;
+  }
+
+  .feedback__title {
+    line-height: 25.2px;
+    text-align: center;
+  }
+
   .logo {
     margin-left: -5px;
   }
@@ -1998,6 +2067,7 @@ button,
 
   .main-container__cruises {
     padding-top: 35px;
+    padding-bottom: 65px;
   }
 
   .main-header {
@@ -2025,56 +2095,16 @@ button,
     background-image: url("../img/bg-benefits-mobile@2x.webp");
   }
 
+  .feedback {
+    background-image: url("../img/bg-form-mobile@2x.webp");
+  }
+
   .main-header {
     background-image: url("../img/bg-image-mobile@2x.webp");
   }
 }
 
 @media screen and (max-width: 767px) {
-  .custom-input,
-  .custom-textarea {
-    padding: 4px 0 48px;
-    width: 100%;
-  }
-
-  .custom-input label,
-  .custom-textarea label {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .custom-input label input,
-  .custom-input label textarea,
-  .custom-textarea label input,
-  .custom-textarea label textarea {
-    max-width: unset;
-    width: 100%;
-  }
-
-  .custom-input__label,
-  .custom-textarea__label {
-    margin: 0 0 18px 0;
-  }
-
-  .custom-input__error,
-  .custom-textarea__error {
-    bottom: 20px;
-  }
-
-  .custom-toggle {
-    padding: 14px 0 10px 0;
-    width: 100%;
-  }
-
-  .custom-toggle:last-of-type {
-    padding: 14px 0 58px 0;
-  }
-
   .custom-select {
     padding: 4px 0 14px;
     width: 100%;
@@ -2157,6 +2187,10 @@ button,
 
   .cruises__item--minion {
     background-image: url("../img/cruises/cruise_minion-tablet@2x.webp");
+  }
+
+  .feedback {
+    background-image: url("../img/bg-form-tablet@2x.webp");
   }
 
   .main-header {

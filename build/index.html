@@ -147,21 +147,67 @@
                   <li class="cruises__item cruises__item--olimpia">Круиз "Олимпия"</li>
                   <li class="cruises__item cruises__item--aurora">Круиз "Аврора"</li>
                   <li class="cruises__item cruises__item--leonor">Круиз "Леонор"</li>
-                  <li class="cruises__item cruises__item--minion">Круиз "Минион - 1"</li>
+                  <li class="cruises__item cruises__item--minion">Круиз "Минион&nbsp;-&nbsp;1"</li>
                 </ul>
               </div>
             </section>
 
             <!-- Feedback -->
-            <section class="main-container__feedback feedback">
-              <div class="container">
+            <div class="main-container__feedback feedback">
+              <div class="feedback__container container">
+
                 <div class="feedback__description">
                   <h2>Раннее бронирование</h2>
-                  <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+                  <p>Забронируйте тур<br class="feedback__description-mobile"> за&nbsp;3-6 месяцев<br class="feedback__description-desktop"> до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
                 </div>
-                <div class="feedback__form form"></div>
+
+                <div class="feedback__form">
+
+                  <section id="consultation" class="component-demo" data-tabs="element">
+
+                    <div class="component-demo__form" data-form-validate="data-form-validate" data-callback="base">
+
+                      <h2 class="feedback__title">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h2>
+
+                        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+
+                          <div class="custom-input form__name" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                            <label>
+                              <input type="text" name="user-name-1" placeholder="Имя"/>
+                            </label>
+                          </div>
+
+                          <div class="custom-input form__phone" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                            <label>
+                              <input type="tel" name="user-phone" placeholder="Телефон"/>
+                            </label>
+                          </div>
+
+                          <div class="custom-input form__email" data-validate-type="email" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                            <label>
+                              <input type="email" name="user-email" placeholder="Email"/>
+                            </label>
+                          </div>
+
+                          <div class="form__checkbox custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Необходимо предоставить согласие">
+                            <label class="form__checkbox-control">
+                              <input class="form__checkbox-input" type="checkbox" value="on" name="user-agreement" checked/>
+                              <span class="form__checkbox-mark"></span>
+                              <span class="form__checkbox-label">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
+                            </label>
+                          </div>
+
+                          <button class="button form__button" type="submit">Оставить заявку</button>
+
+                        </form>
+
+                    </div>
+                  </section>
+
+                </div>
+
               </div>
-            </section>
+            </div>
 
         </main>
 
