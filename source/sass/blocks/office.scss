@@ -1,0 +1,83 @@
+.office {
+  @media (max-width: 767.9px) {
+    margin-bottom: 37px;
+  }
+}
+
+.office__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-dark;
+  margin-bottom: 30px;
+
+  @media (max-width: 1023.9px) {
+    margin-bottom: 27px;
+  }
+}
+
+.office__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.office__item {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-dark;
+}
+
+.office__item--address {
+  display: flex;
+}
+
+.office__item--address br {
+  display: none;
+
+  @media (max-width: 1023.9px) {
+    display: block;
+  }
+}
+
+.office__item--address svg {
+  @media (max-width: 1023.9px) {
+    margin-top: 5px;
+  }
+}
+
+.office__item--phone svg {
+  fill: $color-dark;
+}
+
+.office__item-link:hover svg,
+.office__item-link:focus-visible svg {
+  fill: $color-bg;
+}
+
+.office__item-link:hover span,
+.office__item-link:focus-visible span {
+  color: $color-bg;
+}
+
+.office__item-link {
+  display: flex;
+  align-items: center;
+}
+
+.office__item svg {
+  margin-right: 10px;
+}
+
+.office__item + .office__item {
+  margin-top: 24px;
+
+  @media (max-width: 1023.9px) {
+    margin-top: 20px;
+  }
+}

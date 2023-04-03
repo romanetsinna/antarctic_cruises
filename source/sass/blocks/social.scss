@@ -1,0 +1,43 @@
+.social {
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.social__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.social__item + .social__item {
+  margin-left: 27px;
+
+  @media (max-width: 1023.9px) {
+    margin-left: 23px;
+  }
+}
+
+.social__link svg {
+  fill: $color-light;
+}
+
+.social__link--ok svg {
+  @media (max-width: 1023.9px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+.social__link--dzen svg,
+.social__link--reddit svg {
+  @media (max-width: 1023.9px) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.social__link:hover svg,
+.social__link:focus-visible svg {
+  fill: $color-bg;
+}

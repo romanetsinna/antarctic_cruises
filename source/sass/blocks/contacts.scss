@@ -1,0 +1,29 @@
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8.6%;
+  align-items: center;
+
+  @media (max-width: 1160px) {
+    column-gap: 5%;
+  }
+
+  @media (max-width: 900.9px) {
+    column-gap: 4.5%;
+  }
+
+  @media (max-width: 767.9px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.contacts__office {
+  width: 100%;
+  max-width: 500px;
+
+  // @media (max-width: 767.9px) {
+  //   padding-top: 58px;
+  //   padding-bottom: 37px;
+  // }
+}

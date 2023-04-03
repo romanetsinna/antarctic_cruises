@@ -1,0 +1,40 @@
+.navigation {
+  margin-left: 40px;
+
+  @media (max-width: 1023.9px) {
+    margin-left: -6px;
+  }
+}
+
+.navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation__link span {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: $color-light;
+
+  @media (max-width: 1023.9px) {
+    font-size: 12px;
+    line-height: 14.63px;
+  }
+}
+
+.navigation__link:hover span,
+.navigation__link:focus-visible span {
+  color: $color-bg;
+}
+
+.navigation__item + .navigation__item {
+  margin-left: 33px;
+
+  @media (max-width: 1023.9px) {
+    margin-left: 23px;
+  }
+}
