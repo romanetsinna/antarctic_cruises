@@ -18,7 +18,7 @@
   @media (max-width: 1023.9px) {
     background-image: url("../img/bg-form-tablet.webp");
     padding: initial;
-    padding-bottom: 102px;
+    padding-bottom: 100px;
   }
 
   @media (min-width: 767.9px) and (max-width: 1023.9px) and (min-resolution: 2dppx) {
@@ -126,7 +126,7 @@
 
 .feedback__form {
   background-color: $color-dark;
-  padding: 43px 50px;
+  padding: 43px 50px 50px 50px;
   width: 100%;
   max-width: 403px;
   margin-left: 4px;
@@ -136,11 +136,11 @@
   }
 
   @media (max-width: 767.9px) {
-    padding: 34px 30px 14px 30px;
+    padding: 34px 30px 40px 30px;
   }
 }
 
-.feedback__title {
+.feedback__form h2 {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;

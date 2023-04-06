@@ -52,10 +52,18 @@ window.addEventListener('DOMContentLoaded', () => {
 // Map
 
 const myOwnScriptElement = document.createElement('script');
-myOwnScriptElement.src = 'https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU';
+
+if (myOwnScriptElement) {
+  myOwnScriptElement.src = 'https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU';
+}
+
 const mapElement = document.querySelector('#map');
+
+if (mapElement) {
+  mapElement.style.display = 'block';
+}
+
 let switcher = false;
-mapElement.style.display = 'block';
 
 window.addEventListener('scroll', activateMapOnScroll);
 
@@ -98,3 +106,29 @@ function activateMapOnScroll() {
 }
 
 activateMapOnScroll();
+
+// Бургерное меню
+
+let navMain = document.querySelector('.main-nav');
+let navToggle = document.querySelector('.main-nav__toggle');
+let mainLogo = document.querySelector('.logo__image--img');
+
+if (navMain) {
+  navMain.classList.remove('main-nav--nojs');
+  navMain.classList.add('main-nav--closed');
+  navMain.classList.add('main-nav--with-js');
+}
+
+if (navToggle && mainLogo) {
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('main-nav--closed')) {
+      mainLogo.style.fill = 'transparent';
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      mainLogo.style.fill = '#f9fbfd';
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+}

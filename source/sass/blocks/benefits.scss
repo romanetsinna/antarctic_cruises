@@ -24,7 +24,7 @@
   @media (max-width: 767.9px) {
     padding-left: 0;
     padding-right: 0;
-    min-height: 997px;
+    max-height: 997px;
     background-image: url("../img/bg-benefits-mobile.webp");
   }
 
@@ -46,9 +46,13 @@
     padding-top: 55px;
     padding-bottom: 65px;
   }
+
+  @media (max-width: 400px) {
+    padding-bottom: 128px;
+  }
 }
 
-.benefits__title {
+.benefits__container h2 {
   padding: 0;
   margin: 0;
   text-align: center;
@@ -147,13 +151,13 @@
   }
 }
 
-.benefits__item--benefit-ai .benefits__item-description br {
-  display: none;
+// .benefits__item--benefit-ai .benefits__item-description br {
+//   display: none;
 
-  @media (max-width: 321px) {
-    display: block;
-  }
-}
+//   @media (max-width: 321px) {
+//     display: block;
+//   }
+// }
 
 .benefits__item--benefit-zodiac br {
   display: none;
@@ -163,7 +167,7 @@
   }
 }
 
-.benefits__item-title {
+.benefits__item h3 {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -178,7 +182,7 @@
   }
 }
 
-.benefits__item-description {
+.benefits__item p {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;

@@ -15,7 +15,7 @@
 
   @media (max-width: 767.9px) {
     padding-left: 15px;
-    padding-top: 58px;
+    padding-top: 63px;
     padding-bottom: 65px;
   }
 }
@@ -27,7 +27,11 @@
 
   @media (max-width: 1023.9px) {
     padding-top: 41px;
-    padding-bottom: 42px;
+    padding-bottom: 43px;
+  }
+
+  @media (max-width: 767.9px) {
+    padding-top: 33px;
   }
 }
 
@@ -42,5 +46,12 @@
 
   @media (max-width: 767.9px) {
     flex-direction: column;
+    align-items: initial;
+  }
+}
+
+.main-footer__logo {
+  @media (max-width: 1023.9px) {
+    margin-top: 8px;
   }
 }

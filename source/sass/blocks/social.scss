@@ -1,6 +1,14 @@
 .social {
   margin-left: auto;
-  margin-top: 10px;
+  margin-top: 2px;
+
+  @media (max-width: 1023.9px) {
+    margin-top: 8px;
+  }
+
+  @media (max-width: 767.9px) {
+    margin-left: -6px;
+  }
 }
 
 .social__list {

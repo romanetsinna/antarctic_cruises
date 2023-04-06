@@ -1,4 +1,4 @@
-.description__title {
+.description h1 {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -20,7 +20,7 @@
   }
 }
 
-.description__text {
+.description p {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -40,7 +40,7 @@
   }
 }
 
-.description__text br {
+.description br {
   display: none;
 
   @media (max-width: 767.9px) {

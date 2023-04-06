@@ -44,12 +44,38 @@
   font-size: 10px;
   line-height: 13px;
   color: $color-light;
+  margin-left: 10px;
+  margin-bottom: 12px;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    color: $color-bg-cruises;
+  }
+
+  @media (max-width: 1023.9px) {
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: 767.9px) {
+    margin-left: 15px;
+    margin-top: -3px;
+    margin-bottom: 7px;
+  }
+}
+
+.form__checkbox-label br {
+  display: none;
+
+  @media (max-width: 350px) {
+    display: block;
+  }
 }
 
 .form__button {
   width: 100%;
   max-width: 303px;
-  padding: 15px;
+  padding: 10px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
   font-size: 14px;
@@ -65,4 +91,69 @@
   &:focus {
     background-color: $color-bg-cruises;
   }
+
+  @media (max-width: 1023.9px) {
+    padding: 11px 15px 11px 15px;
+  }
+}
+
+.form__checkbox-control {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+
+  @media (max-width: 1023.9px) {
+    margin-top: -2px;
+  }
+
+  @media (max-width: 767.9px) {
+    margin-top: -6px;
+  }
+}
+
+.form__checkbox-control input {
+  padding: 0;
+  opacity: 0;
+  outline: 0;
+}
+
+.form__checkbox-mark {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: $color-light;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: $color-bg-cruises;
+  }
+
+  @media (max-width: 396px) {
+    top: 6px;
+  }
+}
+
+.form__checkbox-control input:hover ~ .form__checkbox-mark,
+.form__checkbox-control input:focus ~ .form__checkbox-mark {
+  outline: 2px solid $color-bg-cruises;
+}
+
+.form__checkbox-control input:checked + .form__checkbox-mark::before,
+.form__checkbox-control input:checked + .form__checkbox-mark::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 4px;
+  width: 10px;
+  height: 6px;
+  background-image: url("../img/svg/checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
 }
