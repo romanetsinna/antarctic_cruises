@@ -93,15 +93,17 @@ const initMap = () => {
 };
 
 function activateMapOnScroll() {
-  if (mapElement.getBoundingClientRect().top - window.innerHeight < 2000 && !switcher) {
-    switcher = true;
-    insertApiToHead();
-    myOwnScriptElement.addEventListener('load', () => {
-      if (typeof ymaps !== 'undefined') {
-        initMap();
-      }
-    });
-    window.removeEventListener('scroll', activateMapOnScroll);
+  if (mapElement && myOwnScriptElement) {
+    if (mapElement.getBoundingClientRect().top - window.innerHeight < 2000 && !switcher) {
+      switcher = true;
+      insertApiToHead();
+      myOwnScriptElement.addEventListener('load', () => {
+        if (typeof ymaps !== 'undefined') {
+          initMap();
+        }
+      });
+      window.removeEventListener('scroll', activateMapOnScroll);
+    }
   }
 }
 
@@ -111,7 +113,7 @@ activateMapOnScroll();
 
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
-let mainLogo = document.querySelector('.logo__image--img');
+let mainLogo = document.querySelector('.logo__svg');
 
 if (navMain) {
   navMain.classList.remove('main-nav--nojs');

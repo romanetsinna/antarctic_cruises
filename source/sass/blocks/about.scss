@@ -23,7 +23,7 @@
   }
 }
 
-.about__title {
+.about__description h2 {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -45,15 +45,7 @@
   }
 }
 
-.about__title br {
-  display: none;
-
-  @media (max-width: 925px) {
-    display: inline;
-  }
-}
-
-.about__text {
+.about__description p {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -64,12 +56,6 @@
 
   @media (max-width: 767.9px) {
     margin-bottom: 43px;
-  }
-}
-
-.about__text br {
-  @media (max-width: 1145px) {
-    display: none;
   }
 }
 

@@ -110,13 +110,7 @@
   }
 }
 
-.feedback__description-desktop {
-  @media (max-width: 767.9px) {
-    display: none;
-  }
-}
-
-.feedback__description-mobile {
+.feedback__description br {
   display: none;
 
   @media (max-width: 767.9px) {
