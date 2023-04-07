@@ -815,6 +815,23 @@ button,
   max-width: 500px;
 }
 
+.contacts__map-image {
+  position: relative;
+}
+
+.contacts__map-image img {
+  width: 560px;
+  height: 306px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .cruises__container {
   padding-left: 55px;
   padding-right: 55px;
@@ -965,7 +982,6 @@ button,
 
 .cruises__item-hidden-button {
   width: 100%;
-  max-width: 210px;
   max-height: 40px;
   padding: 10px 15px;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -1426,7 +1442,7 @@ button,
 }
 
 .feedback__description br {
-  display: none;
+  display: block;
 }
 
 .feedback__form {
@@ -1547,7 +1563,6 @@ button,
 
 .form__button {
   width: 100%;
-  max-width: 303px;
   padding: 10px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
@@ -1791,23 +1806,6 @@ button,
 .map {
   width: 560px;
   height: 306px;
-}
-
-.map__image {
-  position: relative;
-}
-
-.map__image img {
-  width: 560px;
-  height: 306px;
-  border: none;
-  display: block;
-  margin: 0 auto;
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  z-index: -1;
 }
 
 .modal {
@@ -2140,11 +2138,11 @@ button,
     column-gap: 5%;
   }
 
-  .map {
+  .contacts__map-image img {
     width: 460px;
   }
 
-  .map__image img {
+  .map {
     width: 460px;
   }
 }
@@ -2158,6 +2156,12 @@ button,
     -webkit-column-gap: 2%;
     -moz-column-gap: 2%;
     column-gap: 2%;
+  }
+}
+
+@media (max-width: 1110px) {
+  .cruises__item-hidden {
+    padding: 28px 15px 35px 15px;
   }
 }
 
@@ -2257,10 +2261,6 @@ button,
 
   .cruises__item-hidden {
     padding: 28px 25px 35px 35px;
-  }
-
-  .cruises__item-hidden-button {
-    max-width: 239px;
   }
 
   .cruises__item--astoria {
@@ -2472,14 +2472,20 @@ button,
     column-gap: 4.5%;
   }
 
-  .map {
+  .contacts__map-image img {
     width: 324px;
     height: 335px;
   }
 
-  .map__image img {
+  .map {
     width: 324px;
     height: 335px;
+  }
+}
+
+@media (max-width: 770px) {
+  .cruises__item-hidden-button {
+    max-width: 239px;
   }
 }
 
@@ -2550,6 +2556,11 @@ button,
     flex-direction: column-reverse;
   }
 
+  .contacts__map-image img {
+    width: 290px;
+    height: 316px;
+  }
+
   .cruises__container {
     padding-left: 25px;
     padding-right: 25px;
@@ -2576,6 +2587,10 @@ button,
 
   .cruises__item-hidden-list {
     margin-bottom: 12px;
+  }
+
+  .cruises__item-hidden-button {
+    max-width: unset;
   }
 
   .cruises__item--astoria {
@@ -2651,7 +2666,7 @@ button,
   }
 
   .feedback__description br {
-    display: block;
+    display: none;
   }
 
   .feedback__form {
@@ -2801,11 +2816,6 @@ button,
   }
 
   .map {
-    width: 290px;
-    height: 316px;
-  }
-
-  .map__image img {
     width: 290px;
     height: 316px;
   }

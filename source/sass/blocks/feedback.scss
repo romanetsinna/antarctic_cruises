@@ -111,10 +111,10 @@
 }
 
 .feedback__description br {
-  display: none;
+  display: block;
 
   @media (max-width: 767.9px) {
-    display: block;
+    display: none;
   }
 }
 
