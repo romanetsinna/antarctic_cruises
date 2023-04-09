@@ -2544,13 +2544,12 @@ button,
   .benefits {
     padding-left: 0;
     padding-right: 0;
-    min-height: 997px;
     background-image: url("../img/bg-benefits-mobile.webp");
   }
 
   .benefits__container {
     padding-top: 55px;
-    padding-bottom: 65px;
+    padding-bottom: 68px;
   }
 
   .benefits__container h2 {
