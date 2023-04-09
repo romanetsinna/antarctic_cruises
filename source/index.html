@@ -30,48 +30,39 @@
       <div class="body-container__wrapper">
 
         <header class="main-header">
-          <div class="main-header__container container">
+          <div class="main-header__container">
 
-            <div class="main-header__wrapper">
+            <nav class="main-header__wrapper main-nav main-nav--nojs">
 
-              <!-- Logo -->
-              <div class="main-header__logo logo">
-                <a class="logo__image" href="index.html">
-                  <svg class="logo__svg" width="70" height="38" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#logo"></use>
-                  </svg>
-                </a>
-              </div>
+              <a class="main-header__logo logo" href="index.html">
+                <svg class="logo__svg" width="70" height="38" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+              </a>
 
-              <!-- Menu -->
-              <nav class="main-header__navigation main-nav main-nav--nojs">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#benefits"><span class="main-nav__value">Преимущества</span></a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#"><span class="main-nav__value">Направления</span></a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#cruises"><span class="main-nav__value">Ближайшие круизы</span></a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#contacts"><span class="main-nav__value">Контакты</span></a>
+                </li>
+              </ul>
 
-                <button class="main-nav__toggle" type="button">
-                  <span class="visually-hidden">Открыть меню.</span>
-                </button>
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню.</span>
+              </button>
 
-                <div class="main-nav__wrapper">
-                  <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                      <a class="main-nav__link" href="#benefits"><span class="main-nav__value">Преимущества</span></a>
-                    </li>
-                    <li class="main-nav__item">
-                      <a class="main-nav__link" href="#"><span class="main-nav__value">Направления</span></a>
-                    </li>
-                    <li class="main-nav__item">
-                      <a class="main-nav__link" href="#cruises"><span class="main-nav__value">Ближайшие круизы</span></a>
-                    </li>
-                    <li class="main-nav__item">
-                      <a class="main-nav__link" href="#contacts"><span class="main-nav__value">Контакты</span></a>
-                    </li>
-                  </ul>
-                </div>
+              <div class="main-header__mobile-overlay"></div>
 
-              </nav>
+            </nav>
 
-            </div>
-
-            <!-- Description -->
             <div class="main-header__description description">
               <h1>Круизы в&nbsp;Антарктику</h1>
               <p>Волшебный мир<br> айсбергов и&nbsp;пингвинов</p>
@@ -439,9 +430,7 @@
             <div class="contacts__map">
               <h3 class="visually-hidden">Карта</h3>
               <div id="map" class="map"></div>
-              <div class="contacts__map-image">
-                <img src="img/map.webp" width="560" height="306" alt="Карта." srcset="img/map@2x.webp 2x">
-              </div>
+              <div class="contacts__map-image"></div>
             </div>
 
             <div class="contacts__office office">
@@ -523,7 +512,6 @@
                     <span class="visually-hidden">Мы в Reddit.</span>
                   </a>
                 </li>
-
               </ul>
             </div>
 

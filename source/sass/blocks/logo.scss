@@ -1,20 +1,9 @@
-.logo {
-  width: 100%;
-  max-width: 70px;
-  user-select: none;
-
-  @media (max-width: 767.9px) {
-    margin-left: -5px;
-    margin-bottom: 15px;
-  }
-}
-
-.logo__image:hover,
-.logo__image:focus-visible {
+.logo:hover,
+.logo:focus-visible {
   opacity: 0.7;
 }
 
-.logo__image svg {
+.logo svg {
   fill: $color-light;
 
   @media (max-width: 1023.9px) {

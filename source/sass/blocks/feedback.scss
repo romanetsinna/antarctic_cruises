@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   background-color: $color-bg;
-  padding: 50px 20px 0 121px;
+  padding: 50px 20px 50px 121px;
 
   @media (max-width: 1130px) {
     padding: 50px 20px 0 90px;
@@ -39,6 +39,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 10.8%;
+  align-items: center;
 
   @media (max-width: 1130px) {
     column-gap: 2%;
@@ -56,7 +57,7 @@
 }
 
 .feedback__description {
-  margin-top: 162px;
+  margin-top: -6px;
 
   @media (max-width: 1023.9px) {
     margin-top: 87px;

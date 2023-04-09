@@ -15,14 +15,13 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  display: flex;
-}
-
-.social__item + .social__item {
-  margin-left: 27px;
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+  column-gap: 27px;
+  row-gap: 10px;
 
   @media (max-width: 1023.9px) {
-    margin-left: 23px;
+    column-gap: 23px;
   }
 }
 

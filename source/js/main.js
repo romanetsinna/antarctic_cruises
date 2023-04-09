@@ -111,9 +111,12 @@ activateMapOnScroll();
 
 // Бургерное меню
 
-let navMain = document.querySelector('.main-nav');
-let navToggle = document.querySelector('.main-nav__toggle');
-let mainLogo = document.querySelector('.logo__svg');
+const navMain = document.querySelector('.main-nav');
+const navToggle = document.querySelector('.main-nav__toggle');
+const mainLogo = document.querySelector('.logo__svg');
+const bodyElement = document.body;
+const menuItem = document.querySelectorAll('.main-nav__item');
+const overlayMobileMenu = document.querySelector('.main-header__mobile-overlay');
 
 if (navMain) {
   navMain.classList.remove('main-nav--nojs');
@@ -121,16 +124,44 @@ if (navMain) {
   navMain.classList.add('main-nav--with-js');
 }
 
-if (navToggle && mainLogo) {
+const openMenu = () => {
+  if (mainLogo && navMain && bodyElement) {
+    mainLogo.style.fill = 'transparent';
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+    bodyElement.style.overflow = 'hidden';
+  }
+};
+
+const closeMenu = () => {
+  if (mainLogo && navMain && bodyElement) {
+    mainLogo.style.fill = '#f9fbfd';
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+    bodyElement.style.overflow = 'unset';
+  }
+};
+
+if (navToggle) {
   navToggle.addEventListener('click', function () {
     if (navMain.classList.contains('main-nav--closed')) {
-      mainLogo.style.fill = 'transparent';
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
+      openMenu();
     } else {
-      mainLogo.style.fill = '#f9fbfd';
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
+      closeMenu();
     }
+  });
+}
+
+if (overlayMobileMenu) {
+  overlayMobileMenu.addEventListener('click', () => {
+    closeMenu();
+  });
+}
+
+if (menuItem) {
+  menuItem.forEach((el) => {
+    el.addEventListener('click', () => {
+      closeMenu();
+    });
   });
 }

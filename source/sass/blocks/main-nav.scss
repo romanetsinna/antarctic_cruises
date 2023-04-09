@@ -1,11 +1,6 @@
 .main-nav {
   width: 100%;
-  max-width: 595px;
   position: relative;
-
-  @media (max-width: 1023.9px) {
-    max-width: 503px;
-  }
 }
 
 .main-nav__list {
@@ -33,6 +28,7 @@
   font-size: 16px;
   line-height: 19.5px;
   color: $color-light;
+  user-select: none;
 
   @media (max-width: 1023.9px) {
     font-size: 14px;
@@ -45,20 +41,24 @@
   opacity: 0.7;
 }
 
+.main-header__mobile-overlay {
+  display: none;
+}
+
 //Бургерное меню
+
 .main-nav__toggle {
   display: none;
 
   @media (max-width: 767.9px) {
     position: absolute;
-    top: -29px;
-    right: -11px;
+    top: 13px;
+    right: 10px;
     display: block;
     width: 40px;
     height: 40px;
     cursor: pointer;
     border: none;
-    padding: 20px;
     background-color: transparent;
   }
 }
@@ -75,14 +75,14 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: -12px;
+    top: 10px;
     right: -9px;
     width: 19px;
     height: 2px;
@@ -118,29 +118,21 @@
     position: absolute;
     z-index: 2;
     background-color: $color-light;
-    padding: 85px 20px 270px 26px;
-    top: -37px;
-    left: -23%;
-    min-height: 100vh;
-    width: 100vw;
-    min-width: 320px;
-
-    @media (max-width: 660px) {
-      left: -10%;
-    }
-
-    @media (max-width: 410px) {
-      left: -23%;
-    }
+    padding: 89px 20px 270px 26px;
+    top: 0;
+    right: 0;
+    height: 102vh;
+    width: calc(100% - 35px);
+    overflow-y: scroll;
 
     &::before {
       position: absolute;
       content: "";
-      top: 19px;
+      top: 24px;
       left: 16px;
       width: 42px;
       height: 22px;
-      background-image: url("../../img/sprite/logo.svg");
+      background-image: url("../img/sprite/logo.svg");
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -154,6 +146,17 @@
 
   .main-nav--with-js .main-nav__item + .main-nav__item {
     margin-top: 26px;
+  }
+
+  .main-nav--opened .main-header__mobile-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 43, 102, 0.5);
   }
 }
 
