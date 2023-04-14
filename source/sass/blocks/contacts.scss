@@ -21,10 +21,25 @@
 .contacts__office {
   width: 100%;
   max-width: 500px;
+
+  @media (max-width: 767.9px) {
+    max-width: unset;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (max-width: 380px) {
+    padding-left: unset;
+    padding-right: unset;
+  }
 }
 
 .contacts__map-image {
   position: relative;
+}
+
+.contacts__map {
+  width: 100%;
 }
 
 .contacts__map-image::before {
@@ -45,6 +60,15 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/map@2x.webp");
+  }
+
+  @media (max-width: 1160px) {
+    width: 460px;
+  }
+
+  @media (max-width: 900.9px) {
+    width: 324px;
+    height: 335px;
   }
 
   @media (max-width: 767.9px) {

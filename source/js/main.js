@@ -81,6 +81,7 @@ function initYandexMap() {
     iconImageSize: [18, 22],
     iconImageOffset: [-9, -22],
   });
+  myMap.controls.remove('searchControl');
   myMap.geoObjects.add(myPlacemark);
 }
 

@@ -24,12 +24,7 @@
   row-gap: 10px;
   margin-top: -5px;
 
-  @media (max-width: 1110px) {
-    grid-template-columns: max-content max-content max-content;
-  }
-
   @media (max-width: 1023.9px) {
-    grid-template-columns: max-content max-content max-content max-content;
     column-gap: 23px;
   }
 
