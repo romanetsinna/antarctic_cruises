@@ -875,9 +875,10 @@ button,
 .cruises__item {
   position: relative;
   padding: 30px 30px 23px 30px;
-  width: 100%;
-  height: 100%;
-  min-height: 386px;
+  width: calc(100vw - 236px)/4;
+  height: calc((100vw - 236px) / 4 * 386 / 260);
+  max-width: 260px;
+  max-height: 386px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -886,7 +887,6 @@ button,
 
 .cruises__item-content {
   height: 100%;
-  min-height: 333px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,16 +911,18 @@ button,
   left: 0;
   width: 100%;
   height: 100%;
-  min-height: 386px;
   visibility: hidden;
   opacity: 0;
   z-index: 5;
   padding: 28px 25px 35px 25px;
   background-color: #011c40;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .cruises__item:hover .cruises__item-content,
@@ -951,17 +953,11 @@ button,
   padding: 0;
   list-style-type: none;
   margin-bottom: 10px;
-  height: 230px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  overflow-y: scroll;
-  scrollbar-width: none;
-}
-
-.cruises__item-hidden-list::-webkit-scrollbar {
-  display: none;
+  overflow-y: auto;
 }
 
 .cruises__item-hidden-item + .cruises__item-hidden-item {
@@ -991,7 +987,6 @@ button,
 
 .cruises__item-hidden-button {
   width: 100%;
-  max-height: 40px;
   padding: 10px 15px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
@@ -1010,6 +1005,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-top: auto;
 }
 
 .cruises__item-hidden-button:hover,
@@ -2029,9 +2025,9 @@ button,
 }
 
 .office__item-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2288,6 +2284,10 @@ button,
 
   .cruises__item {
     padding: 25px 30px 28px 35px;
+    width: calc(100vw - 120px)/2;
+    height: calc((100vw - 120px) / 2 * 386 / 324);
+    max-width: unset;
+    max-height: unset;
   }
 
   .cruises__item-hidden {
@@ -2588,12 +2588,10 @@ button,
 
   .contacts__office {
     max-width: unset;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   .contacts__map-image::before {
-    width: 290px;
+    width: 100%;
     height: 316px;
   }
 
@@ -2615,6 +2613,10 @@ button,
 
   .cruises__item {
     padding: 30px 30px 17px 25px;
+    width: calc(100vw - 50px);
+    height: calc((100vw - 50px) * 386 / 270);
+    min-width: 270px;
+    min-height: 386px;
   }
 
   .cruises__item-hidden {
@@ -2622,7 +2624,7 @@ button,
   }
 
   .cruises__item-hidden-list {
-    margin-bottom: 12px;
+    margin-bottom: auto;
   }
 
   .cruises__item-hidden-button {
@@ -2741,7 +2743,12 @@ button,
   .main-container__contacts {
     padding-left: 15px;
     padding-top: 63px;
-    padding-bottom: 65px;
+    padding-bottom: 61px;
+  }
+
+  .main-container__inner-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .main-footer__wrapper {
@@ -2860,7 +2867,7 @@ button,
   }
 
   .map {
-    width: 290px;
+    width: 100%;
     height: 316px;
   }
 
@@ -2974,7 +2981,7 @@ button,
 }
 
 @media (max-width: 380px) {
-  .contacts__office {
+  .main-container__inner-wrapper {
     padding-left: unset;
     padding-right: unset;
   }

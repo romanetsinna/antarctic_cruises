@@ -72,6 +72,7 @@ function initYandexMap() {
     center: [59.938631, 30.323037],
     zoom: 16,
   });
+  myMap.controls.remove('searchControl');
   let myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
     hintContent: 'Метка',
     balloonContent: 'г. Санкт Петербург, ул. Большая Конюшенная, 19/8',
@@ -81,7 +82,6 @@ function initYandexMap() {
     iconImageSize: [18, 22],
     iconImageOffset: [-9, -22],
   });
-  myMap.controls.remove('searchControl');
   myMap.geoObjects.add(myPlacemark);
 }
 
